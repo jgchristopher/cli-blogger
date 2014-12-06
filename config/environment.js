@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'choreiffic',
+    modulePrefix: 'cli-blogger',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
@@ -10,6 +10,7 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+        //bow'ember-htmlbars': true
       }
     },
 

@@ -2,7 +2,12 @@
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-var app = new EmberApp();
+var app = new EmberApp({
+  'ember-cli-bootstrap': {
+    'importBootstrapTheme': true,
+    'components': ['bs-nav']
+  }
+});
 
 // Use `app.import` to add additional libraries to the generated
 // output files.
