@@ -7,10 +7,11 @@
                 </thead>
 
                 <tbody>
-                {{#each model}}
+                {{#each blog in model}}
+
                     <tr>
                         <td>
-                          {{#link-to 'post' this}}{{title}} <small class='muted'>by {{author.name}}</small>{{/link-to}}
+                          {{#link-to 'post' blog}}{{blog.title}} <small class='muted'>by {{blog.author.name}}</small>{{/link-to}}
                         </td>
                     </tr>
                 {{/each}}
